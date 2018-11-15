@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3936bf29-f592-4063-a9bf-44f7a75df02f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/awards/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/awards/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/keller/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/keller/settings.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -38,17 +38,17 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Procfile" value="6" />
-          <entry key="env" value="35" />
+          <entry key="env" value="37" />
           <entry key="gitignore" value="44" />
           <entry key="md" value="130" />
-          <entry key="py" value="199" />
+          <entry key="py" value="235" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Markdown" value="130" />
-          <entry key="PLAIN_TEXT" value="85" />
-          <entry key="Python" value="199" />
+          <entry key="PLAIN_TEXT" value="87" />
+          <entry key="Python" value="235" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
@@ -95,7 +95,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/awards/views.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="105">
@@ -116,11 +116,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/keller/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-762">
-              <caret line="56" column="17" selection-start-line="56" selection-start-column="17" selection-end-line="56" selection-end-column="17" />
+            <state relative-caret-position="531">
+              <caret line="146" lean-forward="true" selection-start-line="146" selection-end-line="146" />
               <folding>
                 <element signature="e#308#317#0" expanded="true" />
               </folding>
@@ -132,7 +132,7 @@
         <entry file="file://$PROJECT_DIR$/.env">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="61" selection-start-column="61" selection-end-column="61" />
+              <caret column="63" selection-start-column="63" selection-end-column="63" />
             </state>
           </provider>
         </entry>
@@ -155,16 +155,16 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/runtime.txt" />
-        <option value="$PROJECT_DIR$/keller/settings.py" />
         <option value="$PROJECT_DIR$/keller/urls.py" />
         <option value="$PROJECT_DIR$/awards/urls.py" />
         <option value="$PROJECT_DIR$/Procfile" />
-        <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/awards/views.py" />
+        <option value="$PROJECT_DIR$/.env" />
+        <option value="$PROJECT_DIR$/keller/settings.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="27" />
     <option name="width" value="673" />
     <option name="height" value="736" />
@@ -227,7 +227,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="25" width="1366" height="743" extended-state="7" />
+    <frame x="0" y="25" width="1366" height="743" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
@@ -300,13 +300,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/requirements.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Procfile">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -314,27 +307,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/keller/settings.py">
+    <entry file="file://$PROJECT_DIR$/awards/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-762">
-          <caret line="56" column="17" selection-start-line="56" selection-start-column="17" selection-end-line="56" selection-end-column="17" />
-          <folding>
-            <element signature="e#308#317#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="105">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.env">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="61" selection-start-column="61" selection-end-column="61" />
+          <caret column="63" selection-start-column="63" selection-end-column="63" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/awards/views.py">
+    <entry file="file://$PROJECT_DIR$/keller/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        <state relative-caret-position="531">
+          <caret line="146" lean-forward="true" selection-start-line="146" selection-end-line="146" />
+          <folding>
+            <element signature="e#308#317#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
