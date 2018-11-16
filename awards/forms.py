@@ -20,7 +20,20 @@ class EditUser(forms.ModelForm):
         model = User
         exclude = []
         fields = ['first_name', 'last_name', 'email']
+
 # class NewComment(forms.ModelForm):
 #     class Meta:
 #         model = Comment
 #         exclude = ['commentator','comment_image']
+
+
+class NewProject(forms.ModelForm):
+    class Meta:
+        model = Project
+        exclude = ['likes', 'profile',]
+
+
+class NewVote(forms.ModelForm):
+    class Meta:
+        model = Vote
+        exclude = ['voter','project']

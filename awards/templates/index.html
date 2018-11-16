@@ -1,6 +1,21 @@
-{% extends "base.html" %}
+{% extends 'base.html'%}
+{% load bootstrap4 %}
 {% block content %}
 
-<h1> Welcome to Moringa</h1>
+{% for project in projects %}
+<div class="col-md-5">
+    <div class="card border-danger mb-3">
+        <div class="card-header bg-transparent border-danger">{{project.projectname}}</div>
+        <a href="/project/{{project.id}}"><img class="card-img-top" id="projectimage" src="{{project.image1.url}}" alt="image couldnt load"></a>
+        <div class="card-body text-success">
+            <h1 class="card-title">By {{project.profile.username}}</h1>
+            <p class="card-text">{{project.overview|truncatechars:50}}</p>
+            <div class="card-footer bg-transparent border-danger">
+                <a class="btn btn-outline-danger" href="{{project.url}}">Visit this website</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endfor %}
 
 {% endblock %}

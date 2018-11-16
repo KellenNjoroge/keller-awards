@@ -1,0 +1,69 @@
+{% extends 'base.html'%}
+{% load bootstrap4 %}
+{% block content %}
+
+<div class="jumbotron">
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block w-100" src="{{project.image1.url}}" alt="First slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Landing Page</h5>
+                    <p></p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="{{project.image2.url}}" alt="Second slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5></h5>
+                    <p></p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="{{project.image3.url}}" alt="Third slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5></h5>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    <div class="description">
+        <h1 id="name">{{project.profile.username}}</h1>
+        <p>{{project.overview}}</p>
+        <p>{{project.averagevote}}</p>
+        <button class="btn btn-outline-danger" id='likes'>{{project.likes}}</button>
+    </div>
+    <div id="the_form">
+    {% if user.is_authenticated %}
+    <button class="btn btn-danger" id="add_comment">Add Comment</button>
+    <form id="commentation" action="/project/{{project.id}}" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+
+        {% bootstrap_form voting_form %}
+        <input type="submit" class="btn btn-danger btn-lg" value="Post">
+    </form>
+    {% endif %}
+    </div>
+
+
+</div>
+
+{% endblock %}
+{% block scripts %} {{block.super}}
+{% load static %}
+  <script type="text/javascript" src="{%static 'js/comment.js'%}"></script>
+{% endblock %}

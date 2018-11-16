@@ -22,5 +22,18 @@
                 </div>
         </div>
 </div>
+<div class="row">
+    <div class="col-md-6 offset-md-3">
+        {% for image in images %}
 
+        <div class="card">
+            <img class="card-img-top" src="{{image.image1.url}}" height='400'>
+            <div class="card-body">
+                <h1 class="card-title"> TOTAL SCORE: </h1>
+                <a class="btn btn-danger" href="#">Update</a>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
 {% endblock %}

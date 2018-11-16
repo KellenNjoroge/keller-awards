@@ -1,0 +1,31 @@
+{%extends 'base.html'%}
+{% block content %}
+<div class="container">
+
+  <div class="row">
+    {% if projects %}
+    <h2>Found {{ projects|length }} projects with related to {{message}}</h2>
+    {% else %}
+    <h2> Found 0 users related to {{message}}</h2>
+    {% endif %}
+
+  </div>
+
+  <div class="row">
+    <h1>here</h1>
+
+    {% if projects %}
+    {% for project in projects %}
+    <div class="col-sm-6 col-md-3">
+      <div class="card">
+        <img src="{{project.image1.url}}" height="300">
+        <h1 class="card-header">{{project.user.username}}</h1>
+        <p class="card-header">{{project.overview | truncatechars:10}}</p>
+        <a href="/stalk/{{project.user_id}}">View Profile</a>
+      </div>
+    </div>
+    {% endfor %}
+    {% endif %}
+  </div>
+</div>
+{% endblock %}
