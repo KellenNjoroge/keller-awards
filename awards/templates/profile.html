@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="card">
+        <div class="card">
+                <div class="card">
+                      <style>
+                              img-circle {
+                              border-radius: 70%;
+                              }
+                      </style>
+                    <img class="profpic"  src="{{profile.profilepic.url}}" class= 'img-circle' height='236' width="304" alt="Image" class="img-responsive">
+                </div>
+                <div class="card">
+                    <ul>
+                        <h1>{{profile.user.username}}</h1>
+                        <div class="card" ><a href="/update" class = 'text-center'>Edit profile</a> </div>
+                    </ul>
+                    <p class="card-body">{{profile.user.profile.bio}}</p>
+                        <h3> Projects</h3>
+                        <h3> Followers</h3>
+                        <h3> Following</h3>
+                </div>
+        </div>
+</div>
+
+{% endblock %}
