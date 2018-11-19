@@ -19,14 +19,18 @@
 
 {% block content %}
 <body>
+  <div class="container-fluid">
+    <div class="card">
+      <div class="card-body">
+        <form  action="{% url 'new_post'%}" method="post" enctype="multipart/form-data">
+          {% csrf_token%}
 
-  <form  action="{% url 'new_post'%}" method="post" enctype="multipart/form-data">
-    {% csrf_token%}
-
-    {% bootstrap_form form %}
-    <input type="submit" class="btn btn-success btn-lg" value="Post">
-  </form>
-
+          {% bootstrap_form form %}
+          <input type="submit" class="btn btn-success btn-lg" value="Post">
+        </form>
+      </div>
+    </div>
+  </div>
    {% block scripts %}
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   {% bootstrap_javascript %} {% endblock %}

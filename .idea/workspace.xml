@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3936bf29-f592-4063-a9bf-44f7a75df02f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/awards/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/awards/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/awards/templates/new_post.html" beforeDir="false" afterPath="$PROJECT_DIR$/awards/templates/new_post.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,7 +27,7 @@
           <entry key="Procfile" value="2" />
           <entry key="env" value="2" />
           <entry key="gitignore" value="1" />
-          <entry key="html" value="17" />
+          <entry key="html" value="18" />
           <entry key="ico" value="1" />
           <entry key="jpg" value="1" />
           <entry key="md" value="2" />
@@ -37,7 +37,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="HTML" value="17" />
+          <entry key="HTML" value="18" />
           <entry key="Image" value="2" />
           <entry key="Markdown" value="2" />
           <entry key="PLAIN_TEXT" value="8" />
@@ -49,14 +49,14 @@
           <entry key="Procfile" value="6" />
           <entry key="env" value="38" />
           <entry key="gitignore" value="44" />
-          <entry key="html" value="333" />
+          <entry key="html" value="425" />
           <entry key="md" value="130" />
           <entry key="py" value="315" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="333" />
+          <entry key="HTML" value="425" />
           <entry key="Markdown" value="130" />
           <entry key="PLAIN_TEXT" value="88" />
           <entry key="Python" value="315" />
@@ -68,13 +68,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/awards/templates/index.html">
+        <entry file="file://$PROJECT_DIR$/awards/templates/new_post.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="29" lean-forward="true" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="480">
+              <caret line="32" column="8" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -107,7 +104,6 @@
         <option value="$PROJECT_DIR$/awards/templates/project.html" />
         <option value="$PROJECT_DIR$/awards/forms.py" />
         <option value="$PROJECT_DIR$/awards/urls.py" />
-        <option value="$PROJECT_DIR$/awards/templates/new_post.html" />
         <option value="$PROJECT_DIR$/awards/views.py" />
         <option value="$PROJECT_DIR$/awards/templates/search.html" />
         <option value="$PROJECT_DIR$/awards/templates/profile.html" />
@@ -115,6 +111,7 @@
         <option value="$PROJECT_DIR$/awards/models.py" />
         <option value="$PROJECT_DIR$/awards/templates/navbar.html" />
         <option value="$PROJECT_DIR$/awards/templates/index.html" />
+        <option value="$PROJECT_DIR$/awards/templates/new_post.html" />
       </list>
     </option>
   </component>
@@ -191,7 +188,7 @@
     <frame x="0" y="27" width="673" height="736" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.0" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.32923076" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -321,13 +318,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/awards/templates/new_post.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/awards/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="250">
@@ -380,11 +370,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/awards/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="29" lean-forward="true" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
+        <state relative-caret-position="420">
+          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/awards/templates/new_post.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="32" column="8" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="8" />
         </state>
       </provider>
     </entry>
