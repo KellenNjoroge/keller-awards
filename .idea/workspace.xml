@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3936bf29-f592-4063-a9bf-44f7a75df02f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/awards/static/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/awards/static/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/awards/static/favicon.ico" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/awards/templates/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/awards/templates/navbar.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -31,6 +30,7 @@
           <entry key="gitignore" value="1" />
           <entry key="html" value="16" />
           <entry key="ico" value="1" />
+          <entry key="jpg" value="1" />
           <entry key="md" value="2" />
           <entry key="py" value="16" />
           <entry key="txt" value="3" />
@@ -39,7 +39,7 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="HTML" value="16" />
-          <entry key="Image" value="1" />
+          <entry key="Image" value="2" />
           <entry key="Markdown" value="2" />
           <entry key="PLAIN_TEXT" value="8" />
           <entry key="Python" value="16" />
@@ -50,14 +50,14 @@
           <entry key="Procfile" value="6" />
           <entry key="env" value="38" />
           <entry key="gitignore" value="44" />
-          <entry key="html" value="116" />
+          <entry key="html" value="169" />
           <entry key="md" value="130" />
           <entry key="py" value="315" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="116" />
+          <entry key="HTML" value="169" />
           <entry key="Markdown" value="130" />
           <entry key="PLAIN_TEXT" value="88" />
           <entry key="Python" value="315" />
@@ -80,8 +80,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/awards/templates/navbar.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="13" lean-forward="true" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+            <state relative-caret-position="315">
+              <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
               <folding>
                 <element signature="n#style#0;n#nav#0;n#!!top" expanded="true" />
               </folding>
@@ -155,6 +155,12 @@
               <item name="keller-awards" type="b2602c69:ProjectViewProjectNode" />
               <item name="keller-awards" type="462c0819:PsiDirectoryNode" />
               <item name="awards" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="keller-awards" type="b2602c69:ProjectViewProjectNode" />
+              <item name="keller-awards" type="462c0819:PsiDirectoryNode" />
+              <item name="awards" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -201,7 +207,7 @@
     <frame x="0" y="27" width="673" height="736" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22461538" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.43076923" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -382,10 +388,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/awards/static/awards2.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/awards/templates/navbar.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="13" lean-forward="true" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        <state relative-caret-position="315">
+          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
           <folding>
             <element signature="n#style#0;n#nav#0;n#!!top" expanded="true" />
           </folding>
