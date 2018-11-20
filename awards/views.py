@@ -5,11 +5,32 @@ from .models import *
 # from django.contrib.auth.decorators import login_required
 from .forms import *
 from django.db import transaction
+from rest_framework.response import Response
+from rest_framework.views import APIView
+from .serializer import *
 
 
 def index(request):
     projects = Project.objects.all()
     return render(request, 'index.html', {'projects': projects})
+
+
+class ProfileList(APIView):
+    def get(self, request, format=None):
+        profiles = Profile.objects.all()
+        users = User.objects.all()
+        serializers = ProfileSerializer(profiles, many=True)
+        serializer = UserSerializer(users, many=True)
+
+        return Response(serializers.data)
+
+
+class ProjectList(APIView):
+    def get(self, request, format=None):
+        projects = Project.objects.all()
+        serialized = ProjectSerializer(projects, many=True)
+
+        return Response(serialized.data)
 
 
 def profile(request):
@@ -60,7 +81,7 @@ def project(request, id):
         voting_form = NewVote()
 
     return render(request, 'project.html', {'project': project,
-                                                   'voting_form': voting_form})
+                                            'voting_form': voting_form})
 
 
 def new_post(request):
