@@ -84,6 +84,26 @@ def project(request, id):
                                             'voting_form': voting_form})
 
 
+def single_project(request, project_id):
+    """
+    function to display single project and voting citeria
+    """
+    # view function for single project
+    projects = Project.get_project(project_id)
+
+    # voting criteria
+    # designs = Design.object.all()
+
+    design = Design.objects.all()
+    usability = Usability.objects.all()
+    creativity = Creativity.objects.all()
+    content = Content.objects.all()
+
+    return render(request, 'Profile/single-project.html',
+                  {"projects": projects, "project_id": project_id, "design": design, "usability": usability,
+                   "creativity": creativity, "content": content})
+
+
 def new_post(request):
     current_user = request.user
     if request.method == 'POST':

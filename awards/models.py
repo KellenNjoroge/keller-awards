@@ -71,6 +71,22 @@ class Project(models.Model):
         posters = cls.objects.filter(imagecomments__commnetator__id=id)
         return comments, posters
 
+    @classmethod
+    def search_by_project_name(cls, search_term):
+        """
+        method to search for project by name
+        :return:
+        """
+        project = cls.objects.filter(project_name=search_term)
+        return project
+
+    def delete_project(self):
+        """
+        method to delete image
+        :return:
+        """
+        self.delete()
+
 
 class Vote(models.Model):
     designvote = models.IntegerField(
@@ -105,3 +121,39 @@ class Vote(models.Model):
 
     def save_vote(self):
         self.save()
+
+
+class Design(models.Model):
+    """
+    model for design measure criterion
+    """
+    design_score = models.IntegerField()
+    project = models.ForeignKey(Project, on_delete=models.CASCADE, related_name='design', null=True)
+    user = models.ForeignKey(User, on_delete=models.CASCADE, null=True)
+
+
+class Usability(models.Model):
+    """
+    model for usability
+    """
+    usability_score = models.IntegerField()
+    project = models.ForeignKey(Project, on_delete=models.CASCADE, related_name='usability', null=True)
+    user = models.ForeignKey(User, on_delete=models.CASCADE, null=True)
+
+
+class Creativity(models.Model):
+    """
+    model for scoring creativity
+    """
+    creativity_score = models.IntegerField()
+    project = models.ForeignKey(Project, on_delete=models.CASCADE, related_name='creativity', null=True)
+    user = models.ForeignKey(User, on_delete=models.CASCADE, null=True)
+
+
+class Content(models.Model):
+    """
+    model for scoring content
+    """
+    content_score = models.IntegerField()
+    project = models.ForeignKey(Project, on_delete=models.CASCADE, related_name='content', null=True)
+    user = models.ForeignKey(User, on_delete=models.CASCADE, null=True)
