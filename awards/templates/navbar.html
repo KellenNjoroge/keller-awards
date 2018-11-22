@@ -1,32 +1,55 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+   <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.5.0/css/all.css' >
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
   <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #696969;">
     <a class="navbar-brand" href="/">
     <img src="/static/awards2.jpg" width="30" height="30" class="d-inline-block align-top" alt="">
-  </a>
-    <a class="navbar-brand" href="/new_post">Submit_Project</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="/profile">Profile<span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/new_post">Submit_Project</a>
-        </li>
-      </ul>
-      <form class="search-section" action="{% url 'search' %}">
+    </a>
+     <form class="search-section" action="{% url 'search' %}">
         <input class="form-control mr-sm-2" type="search" name = 'project' placeholder="Search" aria-label="Search">
         <button type="submit" id="searchsubmit" />
              <span class="icon"><i class="fa fa-search"></i></span>
         </button>
       </form>
-    </div>
+      <div class="col-sm-6 col-md-6">
+            {% if user.is_authenticated %}
+            <ul>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle btn btn-default" data-toggle="dropdown" role="button" aria-expanded="false">Account
+                          <span class="caret"></span>
+                      </a>
+                <ul class="dropdown-menu" role="menu">
+                  <li>
+                    <a href="/accounts/password/change">Change Password</a>
+                  </li>
+                  <li>
+                    <a href="/logout">Logout</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            {% else %}
+
+            <h3><a class='btn btn-default' href="/accounts/login">Login</a></h3>
+
+            {% endif %}
+      </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="/profile">Profile<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/new_post">Submit_Project</a>
+            </li>
+          </ul>
+        </div>
   </nav>
 </html>
