@@ -1,0 +1,19 @@
+{% extends 'base.html'%}
+{% load bootstrap4 %}
+{% block content %}
+{% load review_tags %}
+
+% get_reviews object as reviews %}
+{% for review in reviews %}
+    <p>
+        {{ review.get_average_rating }}
+    </p>
+    <div>
+        {% if review.content %}
+            {{ review.content|truncatewords:'70' }}
+        {% else %}
+            Reviewed without description.
+        {% endif %}
+    </div>
+    <a href="{% url review_detail pk=object.pk %}">Review details</a>
+{% endfor %}

@@ -2,6 +2,7 @@
 {% load bootstrap4 %}
 {% block content %}
 
+
 {% for project in projects %}
 <div class="container-fluid">
     <div class = "card-deck">
@@ -14,6 +15,8 @@
                     <p class="card-text">{{project.overview|truncatechars:50}}</p>
                     <div class="card-footer bg-transparent ">
                         <a class="btn btn-outline-danger" href="{{project.url}}">Visit this website</a>
+                        {% load review_tags %}
+                        <a class="btn btn-outline-danger" href="{% url review_create content_type='project' object_id=project.pk %}" > {% trans "Review this project" %} </a>
                     </div>
                 </div>
             </div>

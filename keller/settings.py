@@ -61,7 +61,9 @@ INSTALLED_APPS = [
     'review',
     'user_media',
     'generic_positions',
+    'reviews',
 ]
+
 
 MIDDLEWARE = [
     'whitenoise.middleware.WhiteNoiseMiddleware',

@@ -16,8 +16,13 @@ Including another URLconf
 from django.conf.urls import url,include
 from django.contrib import admin
 
+
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'', include('awards.urls')),
     url(r'^review/', include('review.urls')),
+    url(r'^reviews/', include('reviews.urls')),
+
 ]
+
+
