@@ -3,28 +3,29 @@
 {% block content %}
 
 
-{% for project in projects %}
+
 <div class="container-fluid">
-    <div class = "card-deck">
-        <div class="card">
-            <div class="card border-primary mb-3" style="max-width: 30rem;">
-                <div class="card-header ">{{project.projectname}}</div>
-                <a href="/project/{{project.id}}"><img class="card-img-top" id="projectimage" src="{{project.image1.url}}" alt="image couldnt load"></a>
-                <div class="card-body ">
-                    <h1 class="card-title">By : {{project.profile.username}}</h1>
-                    <p class="card-text">{{project.overview|truncatechars:50}}</p>
-                    <div class="card-footer bg-transparent ">
-                        <a class="btn btn-outline-danger" href="{{project.url}}">Visit this website</a>
-                        {% load review_tags %}
-                        <a class="btn btn-outline-danger" href="{% url review_create content_type='project' object_id=project.pk %}" > {% trans "Review this project" %} </a>
+    <div class="row">
+        {% for project in projects %}
+        <div class="col-xs-6 col-sm-8 col-md-4 col-lg-4 ">
+            <div class="card">
+                <div class="card border-primary mb-3" style="max-width: 30rem;">
+                    <div class="card-header ">{{project.projectname}}</div>
+                    <a href="/project/{{project.id}}"><img class="card-img-top" id="projectimage" src="{{project.image1.url}}" alt="image couldnt load"></a>
+                    <div class="card-body ">
+                        <h1 class="card-title">By : {{project.profile.username}}</h1>
+                        <p class="card-text">{{project.overview|truncatechars:50}}</p>
+                        <div class="card-footer bg-transparent ">
+                            <a class="btn btn-outline-danger" href="{{project.url}}">Visit this website</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+        {% endfor %}
     </div>
-
 </div>
-{% endfor %}
+
 
 {% endblock %}
 
