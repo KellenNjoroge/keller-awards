@@ -57,6 +57,10 @@ INSTALLED_APPS = [
     'awards',
     'bootstrap4',
     'rest_framework',
+    'hvad',
+    'review',
+    'user_media',
+    'generic_positions',
 ]
 
 MIDDLEWARE = [
