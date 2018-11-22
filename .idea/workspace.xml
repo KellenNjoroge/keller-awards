@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3936bf29-f592-4063-a9bf-44f7a75df02f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/awards/templates/reviews.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/awards/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/awards/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/awards/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/awards/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/awards/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/awards/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/keller/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/keller/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/keller/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/keller/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -40,7 +33,7 @@
           <entry key="ico" value="1" />
           <entry key="jpg" value="1" />
           <entry key="md" value="2" />
-          <entry key="py" value="32" />
+          <entry key="py" value="33" />
           <entry key="txt" value="4" />
         </counts>
       </usages-collector>
@@ -50,7 +43,7 @@
           <entry key="Image" value="2" />
           <entry key="Markdown" value="2" />
           <entry key="PLAIN_TEXT" value="9" />
-          <entry key="Python" value="32" />
+          <entry key="Python" value="33" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -85,14 +78,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/awards/admin.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="15" />
+            <state relative-caret-position="15">
+              <caret line="1" column="40" selection-start-line="1" selection-start-column="40" selection-end-line="1" selection-end-column="40" />
               <folding>
                 <element signature="e#0#32#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/awards/tests.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" selection-start-line="3" selection-end-line="3" />
             </state>
           </provider>
         </entry>
@@ -156,6 +158,7 @@
         <option value="$PROJECT_DIR$/awards/templates/index.html" />
         <option value="$PROJECT_DIR$/awards/urls.py" />
         <option value="$PROJECT_DIR$/awards/admin.py" />
+        <option value="$PROJECT_DIR$/awards/tests.py" />
       </list>
     </option>
   </component>
@@ -430,11 +433,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/awards/admin.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="15" />
+        <state relative-caret-position="15">
+          <caret line="1" column="40" selection-start-line="1" selection-start-column="40" selection-end-line="1" selection-end-column="40" />
           <folding>
             <element signature="e#0#32#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/awards/tests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>
