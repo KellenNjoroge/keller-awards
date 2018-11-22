@@ -2,7 +2,7 @@ from django.shortcuts import render, redirect
 from django.http import HttpResponse, Http404
 from peewee import DoesNotExist
 from .models import *
-# from django.contrib.auth.decorators import login_required
+from django.contrib.auth.decorators import login_required
 from .forms import *
 from django.db import transaction
 from rest_framework.response import Response
@@ -33,6 +33,7 @@ class ProjectList(APIView):
         return Response(serialized.data)
 
 
+@login_required(login_url='/accounts/login/')
 def profile(request):
     current_user = request.user
     profile = Profile.objects.get(user=current_user)
@@ -43,6 +44,7 @@ def profile(request):
     return render(request, 'profile.html', {'profile': profile, 'images': projects})
 
 
+@login_required(login_url='/accounts/login/')
 @transaction.atomic
 def update(request):
     # current_user = User.objects.get(pk=user_id)
@@ -65,6 +67,7 @@ def update(request):
     })
 
 
+@login_required(login_url='/accounts/login/')
 def project(request, id):
     current_user = request.user
     project = Project.objects.get(id=id)
@@ -104,6 +107,7 @@ def single_project(request, project_id):
                    "creativity": creativity, "content": content})
 
 
+@login_required(login_url='/accounts/login/')
 def new_post(request):
     current_user = request.user
     if request.method == 'POST':
